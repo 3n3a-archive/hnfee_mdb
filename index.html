@@ -3,7 +3,7 @@
   <meta charset="utf-8">   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 <!-- Primary Meta Tags -->
-<title>HackerNews — Your Newsfeed the way You want it!</title>
+<title id="title">HackerNews — Your Newsfeed the way You want it!</title>
 <meta name="title" content="HackerNews — Your Newsfeed the way You want it!">
 <meta name="description" content="Hackernews consists of one single HTML file, which is hosted on GitHub.
 
@@ -124,7 +124,7 @@ function changeInnerHTML(id_item, content) {
 }
 
 /* add a word to the title of the site */
-async function changeTitle(addition) {
+function changeTitle(addition) {
   title_content = "Hackernews - " + addition
   changeInnerHTML("title", title_content)
   changeInnerHTML("title_h2", title_content)
